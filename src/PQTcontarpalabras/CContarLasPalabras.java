@@ -16,7 +16,7 @@ public class CContarLasPalabras {
     
     
     public static int contarCaracteresTotal(String cadena){
-		numCar=0;
+		numCar= 0;
 		for (int i=0; i<cadena.length();i++) {
 			/*if(numPalab==0&&numCar!=0) {
 				numPalab=1;}*/

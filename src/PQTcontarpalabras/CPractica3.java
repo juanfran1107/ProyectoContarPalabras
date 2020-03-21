@@ -14,12 +14,12 @@ static Scanner sc=new Scanner(System.in);
 		System.out.println("cual es la cadena?");
 		cadena1=sc.nextLine();
 		car=new int[cadena1.length()];
-		obj.contarCaracteresTotal(cadena1);
-		obj.contarNumeroPalabras(cadena1);
-		obj.contarTodosCaracteres(cadena1);
-		System.out.println(obj2.textoCaracteresTotal(numCar));
+		obj.contarCaracteresTotal (cadena1);
+		obj.contarNumeroPalabras (cadena1);
+		obj.contarTodosCaracteres (cadena1);
+		System.out.println(obj2.textoCaracteresTotal (numCar));
 		System.out.println(obj2.textoNumeroPalabras (numPalab));
-		System.out.print(obj2.textoTodosCaracteres(car));
+		System.out.print(obj2.textoTodosCaracteres (car));
 		 
 		
 		//contarPalabras(cadena1);
