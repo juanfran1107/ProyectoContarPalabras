@@ -9,16 +9,17 @@ public class CPractica3 {
 	 static int car[];
 static Scanner sc=new Scanner(System.in);
 	public static void main(String[] args) {
-	
+	CContarLasPalabras obj=new CContarLasPalabras();
+        CMostrarResultados obj2=new CMostrarResultados();
 		System.out.println("cual es la cadena?");
 		cadena1=sc.nextLine();
 		car=new int[cadena1.length()];
-		contarCaracteresTotal(cadena1);
-		contarNumeroPalabras(cadena1);
-		contarTodosCaracteres(cadena1);
-		System.out.println(textoCaracteresTotal(numCar));
-		System.out.println(textoNumeroPalabras (numPalab));
-		System.out.print(textoTodosCaracteres(car));
+		obj.contarCaracteresTotal(cadena1);
+		obj.contarNumeroPalabras(cadena1);
+		obj.contarTodosCaracteres(cadena1);
+		System.out.println(obj2.textoCaracteresTotal(numCar));
+		System.out.println(obj2.textoNumeroPalabras (numPalab));
+		System.out.print(obj2.textoTodosCaracteres(car));
 		 
 		
 		//contarPalabras(cadena1);
@@ -43,12 +44,12 @@ static Scanner sc=new Scanner(System.in);
 				}		
 			}
 		}
-	}*/
+	}
 	public static int contarCaracteresTotal(String cadena){
 		numCar=0;
 		for (int i=0; i<cadena.length();i++) {
 			/*if(numPalab==0&&numCar!=0) {
-				numPalab=1;}*/
+				numPalab=1;}*//*
 			if(cadena.charAt(i)!=32) 
 			numCar++;
 			
@@ -97,6 +98,6 @@ static Scanner sc=new Scanner(System.in);
 		 for (int i=0; i<n.length;i++) {
 			 letra+=cadena1.charAt(i)+" se repite "+car[i]+" veces\n";
 			 	}return letra;
-	}
+	}*/
 
 }
