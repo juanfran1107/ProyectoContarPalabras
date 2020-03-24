@@ -18,10 +18,16 @@ import static org.junit.Assert.*;
  */
 public class CContarLasPalabrasTest {
     CContarLasPalabras prueba1=new CContarLasPalabras();
+
+    /**
+     *
+     */
     public CContarLasPalabrasTest() {
     }
     /**
-     * Test of contarCaracteresTotal method, of class CContarLasPalabras.
+     * Test de contarCaracteresTotal
+     * introducimos una cadena e indicamos el numero de caracteres que debe 
+     * devolver para que el resultado sea correcto.
      */
     @Test
     public void testContarCaracteresTotal() {
@@ -29,6 +35,13 @@ public class CContarLasPalabrasTest {
         int resultado= prueba1.contarCaracteresTotal("hola me llamo juanfran");
         assertEquals(19,resultado);
     }
+
+    /**
+     *
+     * Test de contarCaracteresTotal
+     * introducimos una cadena e indicamos el numero de caracteres que NO debe 
+     * devolver para que el resultado sea incorrecto.
+     */
     @Test
     public void testContarCaracteresTotal_2() {
         //CContarLasPalabras prueba2=new CContarLasPalabras();
@@ -36,20 +49,32 @@ public class CContarLasPalabrasTest {
         assertNotEquals(15,resultado);
     }
     /**
-     * Test of contarNumeroPalabras method, of class CContarLasPalabras.
+     * Test de contarNumeroPalabras
+     * introducimos una cadena e indicamos el numero real de palabras que la 
+     * forma para que el resultado sea correcto.
+     * 
      */
     @Test
     public void testContarNumeroPalabras() {
         int resultado=prueba1.contarNumeroPalabras("hola me llamo juanfran");
         assertEquals(4,resultado);  
     }
+
+    /**
+     * Test de contarNumeroPalabras
+     * introducimos una cadena e indicamos un numero incorrecto de palabras que la 
+     * forma para que el resultado sea invalido.
+     */
     @Test
     public void testContarNumeroPalabras_2() {
         int resultado=prueba1.contarNumeroPalabras("hola me llamo juanfran");
         assertNotEquals(7,resultado);  
     }
     /**
-     * Test of contarTodosCaracteres method, of class CContarLasPalabras.
+     * Test de contarTodosCaracteres 
+     * Introducimos una pequeña cadena e indicamos caracter por caracter las 
+     * veces que se repite cada uno de manera correcta para que el resultado
+     * sea valido.
      */
     @Test
     public void testContarTodosCaracteres() {
@@ -60,6 +85,13 @@ public class CContarLasPalabrasTest {
         assertEquals(1,resultado[2]);
         assertEquals(1,resultado[3]);
     }
+
+    /**
+     * Test de contarTodosCaracteres 
+     * Introducimos una pequeña cadena e indicamos caracter por caracter las 
+     * veces que se repite cada uno de manera INCORRECTA para que el resultado
+     * sea INVALIDO.
+     */
     @Test
     public void testContarTodosCaracteres_2() {
         int resultado[]=prueba1.contarTodosCaracteres("juanfran");
