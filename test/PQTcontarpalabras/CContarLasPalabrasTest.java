@@ -37,7 +37,7 @@ public class CContarLasPalabrasTest {
     }
     /**
      * Test of contarNumeroPalabras method, of class CContarLasPalabras.
-     *
+     */
     @Test
     public void testContarNumeroPalabras() {
         int resultado=prueba1.contarNumeroPalabras("hola me llamo juanfran");
@@ -47,7 +47,7 @@ public class CContarLasPalabrasTest {
     public void testContarNumeroPalabras_2() {
         int resultado=prueba1.contarNumeroPalabras("hola me llamo juanfran");
         assertNotEquals(7,resultado);  
-    }*/
+    }
     /**
      * Test of contarTodosCaracteres method, of class CContarLasPalabras.
      */
