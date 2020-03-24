@@ -62,8 +62,8 @@ public class CContarLasPalabrasTest {
 
     /**
      * Test de contarNumeroPalabras
-     * introducimos una cadena e indicamos un numero incorrecto de palabras que la 
-     * forma para que el resultado sea invalido.
+     * introducimos una cadena e indicamos un numero incorrecto de palabras que  
+     * la forma para que el resultado sea invalido.
      */
     @Test
     public void testContarNumeroPalabras_2() {
