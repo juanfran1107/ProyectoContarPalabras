@@ -53,7 +53,27 @@ public class CContarLasPalabrasTest {
      */
     @Test
     public void testContarTodosCaracteres() {
-        
+        int resultado[]=prueba1.contarTodosCaracteres("juanfran");
+        assertEquals(1,resultado[0]);
+        assertEquals(1,resultado[1]);
+        assertEquals(2,resultado[2]);
+        assertEquals(2,resultado[3]);
+        assertEquals(1,resultado[4]);
+        assertEquals(1,resultado[5]);
+        assertEquals(2,resultado[6]);
+        assertEquals(2,resultado[7]);
+    }
+    @Test
+    public void testContarTodosCaracteres_2() {
+        int resultado[]=prueba1.contarTodosCaracteres("juanfran");
+        assertEquals(1,resultado[0]);
+        assertNotEquals(2,resultado[1]);
+        assertEquals(2,resultado[2]);
+        assertNotEquals(3,resultado[3]);
+        assertEquals(1,resultado[4]);
+        assertNotEquals(6,resultado[5]);
+        assertEquals(2,resultado[6]);
+        assertNotEquals(3,resultado[7]);
     }
     
 }
